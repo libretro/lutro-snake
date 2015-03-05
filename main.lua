@@ -47,10 +47,10 @@ function lutro.update(dt)
 	lum = math.sin(t/300) * 8 + 40
 	lutro.graphics.setBackgroundColor(HSL(t/100, 128, lum))
 
-	local JOY_UP = lutro.input.joypad(lutro.input.JOY_UP)
-	local JOY_DOWN = lutro.input.joypad(lutro.input.JOY_DOWN)
-	local JOY_LEFT = lutro.input.joypad(lutro.input.JOY_LEFT)
-	local JOY_RIGHT = lutro.input.joypad(lutro.input.JOY_RIGHT)
+	local JOY_UP = lutro.input.joypad("up")
+	local JOY_DOWN = lutro.input.joypad("down")
+	local JOY_LEFT = lutro.input.joypad("left")
+	local JOY_RIGHT = lutro.input.joypad("right")
 
 	if JOY_UP    == 1 then dir = 1 end
 	if JOY_DOWN  == 1 then dir = 2 end
